@@ -1,0 +1,18 @@
+{
+  "name": "python",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "server",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // vscode 公式の Python サポート
+        "ms-python.python",
+        // スペルチェック
+        "streetsidesoftware.code-spell-checker",
+        // コードフォーマッター
+        "ms-python.black-formatter"
+      ]
+    }
+  }
+}

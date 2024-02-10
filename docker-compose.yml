@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  server:
+    build:
+      dockerfile: Dockerfile
+    image: "docker-sample-image"
+    container_name: "docker-sample"
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+    tty: true
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/work
